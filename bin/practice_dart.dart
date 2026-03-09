@@ -1,7 +1,12 @@
-import 'dart:io';
-
 void main() {
-  print("Enter number:");
-  int? number = int.parse(stdin.readLineSync()!);
-  print("The entered number is ${number}");
+  var candidates = ['Mahi','Roji','Trina','Mihi'];
+  var yearsExperience =[1,2,3,6];
+
+  for (int i = 0; i < candidates.length; i++) {
+    if (yearsExperience[i] < 5) {
+      continue;
+    }
+
+    print("${candidates[i]} interview");
+  }
 }
